@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+  dbt:
+    build: .
+    volumes:
+      - .:/dbt
+    entrypoint: ["dbt"]
